@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardana Wellness · Alianza para Centros de Capacitación Oficiales</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bardana-cream': '#F4F3EE',
+            'bardana-green': '#233F1F',
+            'bardana-gold': '#D4A373',
+          },
+          fontFamily: {
+            'cormorant': ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
+            'sans': ['"DM Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.21, 0.47, 0.32, 0.98), transform 0.8s cubic-bezier(0.21, 0.47, 0.32, 0.98);
+    }
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-bardana-cream text-bardana-green font-sans antialiased selection:bg-bardana-gold/20 min-h-screen flex flex-col">
+
+  <header class="border-b border-bardana-green/10 py-6 px-6 md:px-12 flex justify-between items-center sticky top-0 bg-bardana-cream/90 backdrop-blur-md z-40">
+    <div class="font-cormorant text-2xl md:text-3xl tracking-tight leading-none text-bardana-green font-semibold">
+      Bardana Wellness
+    </div>
+    <div class="font-sans text-[10px] md:text-xs tracking-[0.2em] uppercase flex items-center gap-4 text-bardana-green/60">
+      <span>Programa de Sedes B2B</span>
+      <span class="inline-block w-1 h-1 rounded-full bg-bardana-gold"></span>
+      <span class="hidden sm:inline">Pilar, BA</span>
+    </div>
+  </header>
+
+  <main class="grow flex flex-col">
+    
+    <section class="px-6 md:px-12 pt-20 pb-16 md:pt-32 md:pb-24 max-w-5xl mx-auto text-center">
+      <span class="font-sans text-bardana-gold text-[10px] md:text-xs tracking-[0.25em] font-semibold uppercase mb-6 block fade-in-up">
+        Alianzas Estratégicas · Estética Avanzada
+      </span>
+      <h1 class="font-cormorant text-4xl sm:text-6xl md:text-7xl leading-[1.1] tracking-tight mb-8 text-bardana-green font-light fade-in-up">
+        Convertí tu espacio en una <br class="hidden md:block"/>
+        <span class="italic text-bardana-gold">Sede Oficial de Capacitaciones.</span>
+      </h1>
+      <p class="font-sans text-sm md:text-base text-bardana-green/70 max-w-2xl mx-auto leading-relaxed font-light tracking-wide fade-in-up">
+        Vos ponés el lugar y convocás a las alumnas. Nosotros nos encargamos de absolutamente todo el resto: tecnología de vanguardia, materiales, soporte y certificación. Sumá prestigio y rentabilidad sin inversión de capital.
+      </p>
+      <div class="mt-10 fade-in-up">
+        <a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Me%20interesa%20la%20propuesta%20para%20que%20mi%20centro%20sea%20Sede%20de%20Capacitaciones." 
+           target="_blank" 
+           class="inline-flex font-sans tracking-[0.15em] text-xs uppercase font-medium bg-bardana-green text-bardana-cream py-4 px-8 hover:bg-[#31572C] transition-colors duration-300 rounded-sm">
+          Postular mi espacio como Sede
+        </a>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-12 py-16 bg-white/40 border-t border-b border-bardana-green/5">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="font-sans text-[10px] text-bardana-gold tracking-[0.2em] uppercase font-semibold">Tu aliada educativa</span>
+          <h2 class="font-cormorant text-3xl md:text-5xl text-bardana-green mt-2 font-medium">Nosotros nos encargamos del resto</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="text-bardana-gold mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              </div>
+              <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Material Impreso</h3>
+              <p class="text-xs text-[#6B7368] leading-relaxed">Entregamos manuales teóricos completos, guías de consentimientos informados y material gráfico de excelente calidad editorial para cada alumna.</p>
+            </div>
+            <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Listo para entregar</div>
+          </div>
+
+          <div class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="text-bardana-gold mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Grupo de Apoyo</h3>
+              <p class="text-xs text-[#6B7368] leading-relaxed">Acceso a un canal de consultas post-curso dinámico y permanente. Resolvemos dudas clínicas, configuraciones y protocolos en tiempo real.</p>
+            </div>
+            <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Acompañamiento post-curso</div>
+          </div>
+
+          <div class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="text-bardana-gold mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Certificación Oficial</h3>
+              <p class="text-xs text-[#6B7368] leading-relaxed">Diplomas de asistencia y aprobación avalados por la firma Bardana Wellness, lo que otorga un respaldo real y jerarquía profesional a tus egresadas.</p>
+            </div>
+            <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Validación de marca</div>
+          </div>
+
+          <div class="bg-white p-8 border border-bardana-gold/20 rounded-sm flex flex-col justify-between shadow-sm bg-gradient-to-br from-white to-bardana-cream/20">
+            <div>
+              <div class="text-bardana-gold mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Impulso Comercial</h3>
+              <p class="text-xs text-[#6B7368] leading-relaxed">Tanto tu centro como tus alumnas acceden a bonificaciones y beneficios exclusivos en el primer alquiler de cualquiera de nuestros equipos para arrancar a trabajar de inmediato.</p>
+            </div>
+            <div class="text-[10px] text-bardana-green font-medium uppercase tracking-widest mt-6">Beneficio en primer alquiler</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-12 py-24 max-w-5xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div class="lg:col-span-1">
+          <span class="font-sans text-[10px] text-bardana-gold tracking-[0.2em] uppercase font-semibold">Menú de Formaciones</span>
+          <h2 class="font-cormorant text-3xl md:text-5xl text-bardana-green mt-2 mb-6 font-light leading-tight">Todas nuestras <br class="hidden lg:inline"/>tecnologías <br class="hidden lg:inline"/><span class="italic text-bardana-gold">disponibles.</span></h2>
+          <p class="text-xs text-[#6B7368] leading-relaxed mb-6">
+            Podés coordinar fechas para capacitar en cualquiera de los equipos de nuestro catálogo de aparatología avanzada de alta demanda.
+          </p>
+          <a href="https://equipos.bardanawellness.com.ar" target="_blank" class="text-xs font-sans tracking-wider uppercase border-b border-bardana-green pb-1 text-bardana-green hover:text-bardana-gold hover:border-bardana-gold transition-colors inline-flex items-center gap-2">
+            Ver especificaciones en equipos.bardanawellness.com.ar 
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        
+        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">Soprano Titanium ICE</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Láser</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">HIFU 12D MPT</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Lifting</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">FraxFace</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Fraccionado</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">Velaslim Plus</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Modelación</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">Liposonix</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Adiposidad</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">Luz Pulsada (IPL)</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Facial</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">Alquimia</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Dermoabrasión</span>
+          </div>
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between">
+            <span class="font-serif text-lg text-bardana-green">HeadSpa Japonés</span>
+            <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Capilar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#233F1F] text-bardana-cream py-20 px-6 md:px-12 border-t border-bardana-gold/20">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs text-bardana-gold tracking-widest uppercase font-medium">Paso a paso</span>
+          <h2 class="font-cormorant text-3xl md:text-5xl text-white mt-2">¿Cómo trabajamos juntos?</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
+          <div class="p-4">
+            <div class="font-cormorant text-5xl text-bardana-gold mb-2 italic">01</div>
+            <h4 class="font-sans font-medium text-base mb-2 uppercase tracking-wide">Coordinación</h4>
+            <p class="text-xs text-bardana-cream/70 leading-relaxed">Elegimos la tecnología a dictar, congelamos fecha en la agenda y te enviamos las piezas de marketing digital para que promociones el curso.</p>
+          </div>
+          <div class="p-4 border-t md:border-t-0 md:border-l md:border-r border-bardana-cream/10">
+            <div class="font-cormorant text-5xl text-bardana-gold mb-2 italic">02</div>
+            <h4 class="font-sans font-medium text-base mb-2 uppercase tracking-wide">Convocatoria</h4>
+            <p class="text-xs text-bardana-cream/70 leading-relaxed">Tu espacio se encarga de agrupar a las profesionales o alumnas interesadas de la zona y gestionar el espacio del aula/gabinete.</p>
+          </div>
+          <div class="p-4">
+            <div class="font-cormorant text-5xl text-bardana-gold mb-2 italic">03</div>
+            <h4 class="font-sans font-medium text-base mb-2 uppercase tracking-wide">El Día del Curso</h4>
+            <p class="text-xs text-bardana-cream/70 leading-relaxed">Llegamos con los equipos, insumos y manuales físicos. Dictamos la clase teórica-práctica intensiva y certificamos a los asistentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-bardana-green/10 py-12 px-6 text-center flex flex-col items-center">
+    <div class="font-cormorant text-2xl mb-2 text-bardana-green font-semibold">Bardana Wellness Academia</div>
+    <div class="font-sans text-xs text-bardana-green/60 mb-6">Pilar, Buenos Aires, Argentina</div>
+    <div class="font-sans text-[10px] text-bardana-green/40 uppercase tracking-widest">
+      &copy; <span id="year"></span> Bardana Wellness. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Quiero%20solicitar%20asesoramiento%20para%20abrir%20fechas%20de%20capacitaci%C3%B3n%20en%20mi%20centro." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center group" 
+     aria-label="Escribinos al WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // IntersectionObserver logic for smooth fade-ins
+    document.addEventListener("DOMContentLoaded", function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
