@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYLE215GYK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MYLE215GYK');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -94,6 +104,7 @@
       <div class="mt-10 fade-in-up flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Me%20interesa%20conocer%20bien%20c%C3%B3mo%20es%20el%20modelo%20para%20ser%20Espacio%20de%20Capacitaci%C3%B3n." 
            target="_blank" rel="noopener noreferrer"
+           onclick="gtag('event', 'lead_capacitacion', {'origen': 'boton_principal'});"
            class="inline-flex w-full sm:w-auto justify-center font-sans tracking-[0.15em] text-xs uppercase font-medium bg-bardana-green text-bardana-cream py-4 px-8 hover:bg-[#31572C] transition-colors duration-300 rounded-sm shadow-lg shadow-bardana-green/20">
           Conocer cómo trabajamos
         </a>
@@ -267,6 +278,7 @@
   <a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Me%20interesa%20conocer%20bien%20c%C3%B3mo%20es%20el%20modelo%20para%20ser%20Espacio%20de%20Capacitaci%C3%B3n." 
      target="_blank" 
      rel="noopener noreferrer" 
+     onclick="gtag('event', 'lead_capacitacion', {'origen': 'boton_flotante'});"
      class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center group" 
      aria-label="Escribinos al WhatsApp">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
