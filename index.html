@@ -15,17 +15,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Bardana Wellness · Espacio de Capacitación</title>
-  <meta name="description" content="Convertí tu Centro en un Espacio de Capacitación. Prepará a las profesionales con los mejores equipos para que sumen nuevos servicios.">
+  <meta name="description" content="Convertí tu centro de estética en un espacio de capacitación en Pilar y GBA Norte. Nosotros ponemos los equipos y el curso, vos ponés el espacio.">
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sede.bardanawellness.com/">
-  <meta property="og:title" content="Bardana Wellness · Llevá las mejores capacitaciones a tu Centro">
-  <meta property="og:description" content="Nosotros ponemos los equipos y vos facilitás el espacio sin inversión previa.">
-  <meta property="og:image" content="https://sede.bardanawellness.com/og-image.jpg"> 
+  <meta property="og:url" content="https://capacitaciones.bardanawellness.com/">
+  <meta property="og:title" content="Bardana Wellness · Convertí tu centro en espacio de capacitación">
+  <meta property="og:description" content="Nosotros ponemos los equipos y el curso, vos ponés el espacio. Capacitaciones de aparatología en Pilar y GBA Norte.">
+  <meta property="og:image" content="https://capacitaciones.bardanawellness.com/og-image.jpg"> 
   
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Pilar, Buenos Aires">
+  <link rel="canonical" href="https://capacitaciones.bardanawellness.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D4A38'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23F6F3EC' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bardana Wellness · Espacio de Capacitación",
+    "url": "https://capacitaciones.bardanawellness.com/",
+    "description": "Capacitaciones de aparatología estética en centros de Pilar y GBA Norte. Bardana pone los equipos, el curso y los materiales; tu centro pone el espacio.",
+    "areaServed": "Pilar, Buenos Aires y GBA Norte",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Bardana Wellness",
+      "url": "https://www.bardanawellness.com"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -33,13 +55,17 @@
       theme: {
         extend: {
           colors: {
-            'bardana-cream': '#F4F3EE',
-            'bardana-green': '#233F1F',
-            'bardana-gold': '#D4A373',
+            'bardana-cream': '#F6F3EC',
+            'bardana-cream-deep': '#ECE6DA',
+            'bardana-green': '#3D4A38',
+            'bardana-sage': '#9CAA92',
+            'bardana-sage-deep': '#6E7E66',
+            'bardana-ink-soft': '#6F6A5F',
+            'bardana-gold': '#B89B6E',
           },
           fontFamily: {
             'cormorant': ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
-            'sans': ['"DM Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            'sans': ['Jost', 'ui-sans-serif', 'system-ui', 'sans-serif'],
           }
         }
       }
@@ -56,29 +82,15 @@
       opacity: 1;
       transform: translateY(0);
     }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-      opacity: 0;
-    }
-    .faq-answer.open {
-      max-height: 500px;
-      opacity: 1;
-    }
-    .faq-icon {
-      transition: transform 0.3s ease;
-    }
-    .faq-icon.open {
-      transform: rotate(180deg);
-    }
+
   </style>
 </head>
 <body class="bg-bardana-cream text-bardana-green font-sans antialiased selection:bg-bardana-gold/20 min-h-screen flex flex-col">
 
   <header class="border-b border-bardana-green/10 py-6 px-6 md:px-12 flex justify-between items-center sticky top-0 bg-bardana-cream/90 backdrop-blur-md z-40" role="banner">
-    <div class="font-cormorant text-2xl md:text-3xl tracking-tight leading-none text-bardana-green font-semibold" aria-label="Logo Bardana Wellness">
-      Bardana Wellness
+    <div class="leading-none" aria-label="Logo Bardana Wellness">
+      <span class="font-cormorant text-2xl font-semibold tracking-[0.18em] text-bardana-green block">BARDANA</span>
+      <span class="text-[9px] uppercase tracking-[0.4em] text-bardana-green/60 block mt-1 pl-0.5">Wellness · Pilar</span>
     </div>
     <div class="font-sans text-[10px] md:text-xs tracking-[0.2em] uppercase flex items-center gap-4 text-bardana-green/60">
       <span>Alianzas para Centros</span>
@@ -98,14 +110,14 @@
         <span class="italic text-bardana-gold">Espacio de Capacitación.</span>
       </h1>
       <p class="font-sans text-sm md:text-base text-bardana-green/70 max-w-2xl mx-auto leading-relaxed font-light tracking-wide fade-in-up">
-        Aprovechá tu espacio al máximo. Nosotros ponemos el equipamiento para dar el curso, los materiales, y vos facilitás la capacitación sin necesidad de inversión previa.
+        Nosotros ponemos el equipo, el curso y los materiales. Vos ponés el espacio.
       </p>
       
       <div class="mt-10 fade-in-up flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Me%20interesa%20conocer%20bien%20c%C3%B3mo%20es%20el%20modelo%20para%20ser%20Espacio%20de%20Capacitaci%C3%B3n." 
            target="_blank" rel="noopener noreferrer"
            onclick="gtag('event', 'lead_capacitacion', {'origen': 'boton_principal'});"
-           class="inline-flex w-full sm:w-auto justify-center font-sans tracking-[0.15em] text-xs uppercase font-medium bg-bardana-green text-bardana-cream py-4 px-8 hover:bg-[#31572C] transition-colors duration-300 rounded-sm shadow-lg shadow-bardana-green/20">
+           class="inline-flex w-full sm:w-auto justify-center font-sans tracking-[0.15em] text-xs uppercase font-medium bg-bardana-green text-bardana-cream py-4 px-8 hover:bg-bardana-sage-deep transition-colors duration-300 rounded-full shadow-lg shadow-bardana-green/20">
           Conocer cómo trabajamos
         </a>
       </div>
@@ -118,47 +130,47 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <article class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+          <article class="bg-white p-8 border border-bardana-green/5 rounded-2xl flex flex-col justify-between shadow-sm">
             <div>
               <div class="text-bardana-gold mb-6" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
               </div>
               <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Formación Completa</h3>
-              <p class="text-xs text-[#6B7368] leading-relaxed">Entregamos los manuales y consentimientos impresos. Nos aseguramos de que el grupo aprenda la técnica de verdad antes de atender a su primer paciente.</p>
+              <p class="text-xs text-bardana-ink-soft leading-relaxed">Entregamos los manuales y consentimientos impresos. Nos aseguramos de que el grupo aprenda la técnica de verdad antes de atender a su primera clienta.</p>
             </div>
             <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Tranquilidad para vos</div>
           </article>
 
-          <article class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+          <article class="bg-white p-8 border border-bardana-green/5 rounded-2xl flex flex-col justify-between shadow-sm">
             <div>
               <div class="text-bardana-gold mb-6" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Respaldo y Certificación</h3>
-              <p class="text-xs text-[#6B7368] leading-relaxed">Entregamos certificados de asistencia. Tu espacio se reposiciona al convertirse en un punto de encuentro y formación para colegas.</p>
+              <p class="text-xs text-bardana-ink-soft leading-relaxed">Entregamos certificados de asistencia. Tu espacio se reposiciona al convertirse en un punto de encuentro y formación para colegas.</p>
             </div>
             <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Posicioná tu Centro</div>
           </article>
 
-          <article class="bg-white p-8 border border-bardana-green/5 rounded-sm flex flex-col justify-between shadow-sm">
+          <article class="bg-white p-8 border border-bardana-green/5 rounded-2xl flex flex-col justify-between shadow-sm">
             <div>
               <div class="text-bardana-gold mb-6" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Comunidad Bardana</h3>
-              <p class="text-xs text-[#6B7368] leading-relaxed">Las sumamos al grupo de WhatsApp de la Comunidad Bardana. Estamos siempre conectados para resolver dudas rápidas, compartir experiencias y seguir en contacto.</p>
+              <p class="text-xs text-bardana-ink-soft leading-relaxed">Las sumamos al grupo de WhatsApp de la Comunidad Bardana. Estamos siempre conectados para resolver dudas rápidas, compartir experiencias y seguir en contacto.</p>
             </div>
             <div class="text-[10px] text-bardana-gold uppercase tracking-widest mt-6">Soporte post-curso</div>
           </article>
 
-          <article class="bg-white p-8 border border-bardana-gold/40 rounded-sm flex flex-col justify-between shadow-md bg-gradient-to-br from-white to-bardana-cream/40 scale-105 transform z-10 relative">
+          <article class="bg-white p-8 border border-bardana-gold/40 rounded-2xl flex flex-col justify-between shadow-md bg-gradient-to-br from-white to-bardana-cream/40 scale-105 transform z-10 relative">
             <div class="absolute -top-3 -right-3 bg-bardana-gold text-white text-[9px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Solo para alumnas</div>
             <div>
               <div class="text-bardana-gold mb-6" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               </div>
               <h3 class="font-serif text-xl text-bardana-green mb-3 font-medium">Bono de Primera Vez</h3>
-              <p class="text-xs text-[#6B7368] leading-relaxed">Las profesionales que hagan el curso en tu espacio obtienen un <strong>descuento importante en su primer alquiler</strong>. Es el empujón ideal para que se animen a empezar a trabajar de inmediato.</p>
+              <p class="text-xs text-bardana-ink-soft leading-relaxed">Las profesionales que hagan el curso en tu espacio obtienen un <strong>descuento importante en su primer alquiler</strong>. Es el empujón ideal para que se animen a empezar a trabajar de inmediato.</p>
             </div>
             <div class="text-[10px] text-bardana-green font-semibold uppercase tracking-widest mt-6">Ayuda para empezar</div>
           </article>
@@ -170,8 +182,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <div class="lg:col-span-1">
           <span class="font-sans text-[10px] text-bardana-gold tracking-[0.2em] uppercase font-semibold">Nuestros Equipos</span>
-          <h2 id="equipment-title" class="font-cormorant text-3xl md:text-5xl text-bardana-green mt-2 mb-6 font-light leading-tight">Los tratamientos más <br class="hidden lg:inline"/><span class="italic text-bardana-gold">solicitados.</span></h2>
-          <p class="text-xs text-[#6B7368] leading-relaxed mb-6">
+          <h2 id="equipment-title" class="font-cormorant text-3xl md:text-5xl text-bardana-green mt-2 mb-6 font-light leading-tight">Los equipos más <br class="hidden lg:inline"/><span class="italic text-bardana-gold">solicitados.</span></h2>
+          <p class="text-xs text-bardana-ink-soft leading-relaxed mb-6">
             Fijate con qué equipo te gustaría armar la próxima fecha.
           </p>
           <a href="https://equipos.bardanawellness.com" target="_blank" rel="noopener noreferrer" class="text-xs font-sans tracking-wider uppercase border-b border-bardana-green pb-1 text-bardana-green hover:text-bardana-gold hover:border-bardana-gold transition-colors inline-flex items-center gap-2">
@@ -181,35 +193,35 @@
         </div>
         
         <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">Soprano Titanium ICE</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Láser</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">HIFU 12D</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Lifting</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">FraxFace</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Fraccionado</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">Velaslim Plus</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Modelación</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">Liposonix</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Adiposidad</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">Luz Pulsada (IPL)</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Facial</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">Alquimia</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Dermoabrasión</span>
           </div>
-          <div class="bg-white p-5 border border-bardana-green/5 rounded-sm flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white p-5 border border-bardana-green/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <span class="font-serif text-lg text-bardana-green">HeadSpa Japonés</span>
             <span class="text-[9px] bg-bardana-cream px-2 py-1 text-bardana-gold uppercase tracking-wider font-medium">Capilar</span>
           </div>
@@ -217,7 +229,7 @@
       </div>
     </section>
 
-    <section class="bg-[#233F1F] text-bardana-cream py-24 px-6 md:px-12 border-t border-bardana-gold/20" aria-labelledby="steps-title">
+    <section class="bg-bardana-green text-bardana-cream py-24 px-6 md:px-12 border-t border-bardana-gold/20" aria-labelledby="steps-title">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-20 fade-in-up">
           <span class="text-xs text-bardana-gold tracking-widest uppercase font-medium">Paso a paso</span>
@@ -231,17 +243,17 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative z-10">
             
             <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center group cursor-default">
-              <div class="shrink-0 w-14 h-14 rounded-full bg-[#233F1F] border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-[#233F1F] transition-colors duration-300 shadow-[0_0_15px_rgba(212,163,115,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
+              <div class="shrink-0 w-14 h-14 rounded-full bg-bardana-green border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-bardana-green transition-colors duration-300 shadow-[0_0_15px_rgba(184,155,110,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
               </div>
               <div>
                 <h3 class="font-sans font-medium text-lg mb-2 text-white">1. Armamos la fecha</h3>
-                <p class="text-sm text-bardana-cream/70 leading-relaxed max-w-[250px] mx-auto">Nos decís qué equipo te interesa, cerramos el día y te pasamos los flyers listos para invitar a las chicas.</p>
+                <p class="text-sm text-bardana-cream/70 leading-relaxed max-w-[250px] mx-auto">Nos decís qué equipo te interesa, cerramos el día y te pasamos los flyers listos para invitar a las profesionales.</p>
               </div>
             </div>
 
             <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center group cursor-default">
-              <div class="shrink-0 w-14 h-14 rounded-full bg-[#233F1F] border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-[#233F1F] transition-colors duration-300 shadow-[0_0_15px_rgba(212,163,115,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
+              <div class="shrink-0 w-14 h-14 rounded-full bg-bardana-green border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-bardana-green transition-colors duration-300 shadow-[0_0_15px_rgba(184,155,110,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
               </div>
               <div>
@@ -251,12 +263,12 @@
             </div>
 
             <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center group cursor-default">
-              <div class="shrink-0 w-14 h-14 rounded-full bg-[#233F1F] border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-[#233F1F] transition-colors duration-300 shadow-[0_0_15px_rgba(212,163,115,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
+              <div class="shrink-0 w-14 h-14 rounded-full bg-bardana-green border-2 border-bardana-gold flex items-center justify-center text-bardana-gold group-hover:bg-bardana-gold group-hover:text-bardana-green transition-colors duration-300 shadow-[0_0_15px_rgba(184,155,110,0.15)] mb-0 md:mb-6 mr-6 md:mr-0 z-10">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <div>
                 <h3 class="font-sans font-medium text-lg mb-2 text-white">3. A Trabajar</h3>
-                <p class="text-sm text-bardana-cream/70 leading-relaxed max-w-[250px] mx-auto">Las chicas que se capacitaron ya pueden usar su descuento y alquilarnos el equipo cuando tengan pacientes.</p>
+                <p class="text-sm text-bardana-cream/70 leading-relaxed max-w-[250px] mx-auto">Las profesionales que se capacitaron ya pueden usar su descuento y alquilarnos el equipo cuando tengan clientas.</p>
               </div>
             </div>
 
@@ -267,10 +279,28 @@
 
   </main>
 
-  <footer class="border-t border-bardana-green/10 py-12 px-6 text-center flex flex-col items-center" role="contentinfo">
-    <div class="font-cormorant text-2xl mb-2 text-bardana-green font-semibold">Bardana Wellness Academia</div>
-    <div class="font-sans text-xs text-bardana-green/60 mb-6">Pilar, Buenos Aires, Argentina</div>
-    <div class="font-sans text-[10px] text-bardana-green/40 uppercase tracking-widest">
+  <footer class="bg-bardana-green pt-16 pb-8 px-6 md:px-12" role="contentinfo">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <span class="font-cormorant text-2xl font-semibold tracking-[0.18em] text-bardana-cream block mb-1">BARDANA</span>
+        <span class="text-[9px] uppercase tracking-[0.4em] text-bardana-gold block mb-5 pl-0.5">Wellness · Capacitaciones</span>
+        <p class="text-bardana-cream/45 font-light text-sm leading-relaxed">Capacitaciones de aparatología estética en centros de Pilar y GBA Norte.</p>
+      </div>
+      <div>
+        <h4 class="text-bardana-gold uppercase text-[10px] tracking-[0.18em] mb-5">Contacto</h4>
+        <p class="text-bardana-cream/70 font-light text-sm mb-2">Pilar, Buenos Aires · GBA Norte</p>
+        <p class="mb-2"><a href="https://wa.me/5491172370483?text=%C2%A1Hola%20Bardana!%20Me%20interesa%20conocer%20bien%20c%C3%B3mo%20es%20el%20modelo%20para%20ser%20Espacio%20de%20Capacitaci%C3%B3n." target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'lead_capacitacion', {'origen': 'footer'});" class="text-bardana-cream/70 hover:text-bardana-gold font-light text-sm transition-colors">Escribinos por WhatsApp</a></p>
+        <p><a href="https://www.instagram.com/bardana.wellness" target="_blank" rel="noopener noreferrer" class="text-bardana-cream/70 hover:text-bardana-gold font-light text-sm transition-colors">Seguinos en Instagram</a></p>
+      </div>
+      <div>
+        <h4 class="text-bardana-gold uppercase text-[10px] tracking-[0.18em] mb-5">Ecosistema Bardana</h4>
+        <ul class="space-y-2 font-light text-sm text-bardana-cream/55">
+          <li><a href="https://www.bardanawellness.com" class="hover:text-bardana-gold transition-colors">Espacio de bienestar</a></li>
+          <li><a href="https://equipos.bardanawellness.com" class="hover:text-bardana-gold transition-colors">Alquiler de aparatología</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto text-center border-t border-bardana-cream/10 pt-7 font-sans text-[10px] text-bardana-cream/35 uppercase tracking-widest">
       &copy; <span id="year"></span> Bardana Wellness. Todos los derechos reservados.
     </div>
   </footer>
